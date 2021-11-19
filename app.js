@@ -2,6 +2,7 @@
  const score = document.querySelector('.score');
  const buttons = document.querySelectorAll('button');
  const winnerScores = [0, 0];
+ //  winnerScores.innerHTML.style.color = "red";
 
  //add event listeners to buttons
  for (let i = 0; i < buttons.length; i++) {
@@ -28,7 +29,7 @@
 
      //setup a function to compare winners and return result
      let result = checkWinner(playerSelection, computerSelection);
-
+     //  result.innerText.style.color = "blue";
      //output scores to the DOM
      if (result === 'Player') {
          result += ' wins!';
